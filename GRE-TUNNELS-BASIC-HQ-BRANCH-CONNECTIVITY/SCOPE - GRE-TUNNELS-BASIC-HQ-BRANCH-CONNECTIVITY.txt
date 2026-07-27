@@ -1,0 +1,13 @@
+R1 = HQ 
+R2 = BRANCH
+R3 = ISP A
+R4 = ISP B
+
+R1 has internet connection with R3
+R2 has internet connection with R4
+
+Thus, internet facing IPs on both R1 and R2 should be able to ping each other.
+
+Form GRE TUNNEL between R1 and R2. 
+Use static route to advertise loopback RFC1918 addresses between R1 and R2 for reachability.
+
